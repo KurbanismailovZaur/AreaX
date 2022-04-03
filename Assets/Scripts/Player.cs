@@ -9,6 +9,7 @@ using Redcode.Moroutines.Extensions;
 using Redcode.Tweens;
 using Redcode.Tweens.Extensions;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace AreaX
 {
@@ -56,6 +57,9 @@ namespace AreaX
             _healthImage.fillAmount = _health / 100f;
 
             _audioSource.PlayOneShot(_painClips.GetRandomElement());
+
+            if (_health == 0)
+                SceneManager.LoadScene(0);
         }
     }
 }
