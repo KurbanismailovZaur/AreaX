@@ -312,7 +312,7 @@ namespace Redcode.Moroutines
         /// /// <param name="ownersComponent"><inheritdoc cref="Run(Component, IEnumerator)" path="/param[@name='ownersComponent']"/></param>
         /// <param name="enumerable"><inheritdoc cref="Create(IEnumerable)"/></param>
         /// <returns><inheritdoc cref="Create(IEnumerator)"/></returns>
-        public static Moroutine Run(Component ownersComponent, IEnumerable enumerable) => Run(ownersComponent.gameObject, enumerable).Run();
+        public static Moroutine Run(Component ownersComponent, IEnumerable enumerable) => Run(ownersComponent.gameObject, enumerable);
 
         /// <summary>
         /// Create and run moroutine.
