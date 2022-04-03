@@ -24,6 +24,7 @@ namespace AreaX
             while (true)
             {
                 _text.text = (Time.time - time).ToString("0.0");
+                yield return null;
             }
         }
     }
